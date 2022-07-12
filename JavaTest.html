@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="js/JavaTest.js"></script>
+    <meta charset="UTF-8">
+    <title>MMU Video</title>
+</head>
+
+<body>
+    <header>
+        <h1> Louis Nokes, 19083507, 14/11/19</h1>
+    </header>
+	
+	
+
+    <section id="videoContainer">
+
+        <video poster="video/poster.jpg">
+            <source src="video/mp4/mmu.mp4" type="video/mp4">
+            <source src="video/webm/MMU.mp4" type="video/webm">
+        </video>
+
+        <div id="videoControls">
+            <button type="button" id="playPause">Play</button>
+            <button type="button" id="muteUnmute">Mute</button>
+            <input type="range" id="seekBar" min=0 max=100 step=1 value=0 />
+            <input type="range" id="volumeBar" min=0 max=10 step=1 value=5 />
+            Audio: <input type="text" id="audioDisplayElement" size="1" placeholder="5" />
+            currentTime: <input type="text" id="currentTimes" size="4" placeholder="00:00" />
+            remainingTime: <input type="text" id="returnTime" size="4" placeholder="01:40" />
+
+            playback speed: <select>
+                <option value=0.5>0.5x</option>
+                <option value=0.75>0.75x</option>
+                <option value=1.0 selected>1.0x</option>
+                <option value=1.5>1.5x</option>
+                <option value=3.0>3.0x</option>
+            </select>
+        </div>
+
+    </section>
+</body>
+
+</html>
